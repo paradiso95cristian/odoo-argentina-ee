@@ -6,7 +6,7 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="account_reports.partner_view_buttons"/>
         <field name="arch" type="xml">
-            <!-- <div name="button_box" position="inside">
+            <div name="button_box" position="inside">
                 <button class="oe_stat_button" type="object" groups="account.group_account_invoice"
                     name="action_open_reconcile" icon="fa-dollar">
                     <div class="o_stat_info">
@@ -14,7 +14,7 @@
                         <span class="o_stat_text">Matching</span>
                     </div>
                 </button>
-            </div> -->
+            </div>
             <xpath expr="//page[@name='accounting']//group" position="after">
                 <group>
                     <field name="last_time_entries_checked" readonly="0" groups="base.group_no_one"/>
