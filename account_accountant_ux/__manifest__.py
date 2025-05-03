@@ -39,7 +39,6 @@
         'views/account_move_line.xml',
         'wizards/account_change_lock_date_views.xml',
         'wizards/res_config_settings_views.xml',
-        'wizards/account_reconcile_wizard.xml',
         'data/account_accountant_data.xml',
         'views/account_journal_dashboard_view.xml',
     ],
