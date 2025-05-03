@@ -34,7 +34,7 @@
         'account_ux',
     ],
     'data': [
-        'views/res_partner_view.xml',
+        # 'views/res_partner_view.xml',
         'views/account_followup_views.xml',
         'views/account_move_line.xml',
         'wizards/account_change_lock_date_views.xml',
