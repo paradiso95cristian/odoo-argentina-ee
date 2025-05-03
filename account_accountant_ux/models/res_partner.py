@@ -14,12 +14,12 @@ class ResPartner(models.Model):
     credit = fields.Monetary(search='_credit_search')
     debit = fields.Monetary(search='_debit_search')
 
-    def action_open_reconcile(self):
-        action_values = self.env['ir.actions.act_window']._for_xml_id('account_accountant.action_move_line_posted_unreconciled')
-        domain = ast.literal_eval(action_values['domain'])
-        domain.append(('partner_id', '=', self.id))
-        action_values['domain'] = domain
-        return action_values
+    # def action_open_reconcile(self):
+    #     action_values = self.env['ir.actions.act_window']._for_xml_id('account_accountant.action_move_line_posted_unreconciled')
+    #     domain = ast.literal_eval(action_values['domain'])
+    #     domain.append(('partner_id', '=', self.id))
+    #     action_values['domain'] = domain
+    #     return action_values
 
     def open_partner_ledger(self):
         """ Heredamos y modificamos el método original que está en account reports y lo dejamos como estaba en 16
